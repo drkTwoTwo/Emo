@@ -1,0 +1,12 @@
+Django>=4.2
+djangorestframework
+psycopg2-binary
+celery[redis]
+redis
+djangorestframework-simplejwt
+requests
+torch
+transformers
+sentence-transformers
+python-dotenv
+uvicorn
