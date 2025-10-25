@@ -1,0 +1,165 @@
+Goal:
+Build a next-generation web app that tracks, analyzes, and visualizes a user’s stress levels using web-accessible data and Gemini API intelligence.
+
+The app combines:
+
+Google Fit data (steps, sleep, heart rate)
+
+Web activity patterns (screen time, site focus, social vs productive)
+
+Self-reported mood and text-based reflection
+
+AI insights (Gemini) to analyze stress and give recommendations
+
+⚙️ Tech Stack
+
+Framework: React (Next.js 15 or Vite + React)
+
+Language: TypeScript
+
+Styling: Tailwind CSS + Framer Motion + ShadCN UI
+
+Charts: Recharts / Chart.js for visual analytics
+
+API Client: Axios
+
+Auth: Firebase Auth (optional)
+
+State: Zustand or Redux Toolkit
+
+Storage: IndexedDB / LocalStorage
+
+AI: Gemini API (provided key)
+
+Gemini API Key: AIzaSyB1L_D-Tmr1hFeblSyXi7IOMCKlh-idTZM
+
+🌒 Core Features
+1. Onboarding + Permission Flow
+
+Step-by-step flow to explain app purpose
+
+Dark-themed animated screens with progress
+
+Request permissions / OAuth for:
+
+Google Fit
+
+Browser activity or focus tracking
+
+Notifications (optional reminders)
+
+Store user consent locally
+
+2. Dashboard – Real-Time Stress Overview
+
+Animated cards showing:
+
+🏃 Steps
+
+❤️ Heart rate
+
+💤 Sleep hours
+
+📱 Web usage time
+
+😰 Calculated stress score
+
+Gradient animated backgrounds, neumorphic shadows, and Framer Motion transitions
+
+Charts: weekly trend, comparison with healthy baseline
+
+3. Gemini AI Chat Assistant
+
+Chat UI similar to ChatGPT or Gemini interface
+
+Two modes:
+
+Chat mode: user can ask wellness/stress-related questions
+
+Insight mode: AI summarizes trends in data (“Your stress peaked last Thursday at 9 PM”)
+
+Responses are context-aware: based on user’s recent data
+
+Support for emojis, markdown, and lightweight text formatting
+
+4. AI-Powered Stress Analysis
+
+Combine Google Fit + browser activity + user text entries
+
+Send data to Gemini API for:
+
+Stress prediction
+
+Behavioral pattern recognition
+
+Lifestyle recommendations (sleep, break, meditation)
+
+Display stress level as:
+
+Numeric score
+
+Emoji/mood indicator
+
+Trend chart (day/week/month)
+
+5. Mood Journal
+
+Simple journaling area where user types how they feel
+
+Gemini analyzes text sentiment and correlates with stress score
+
+“AI reflection” — Gemini summarizes emotional tone over time
+
+6. Focus Tracker
+
+Detects active tab and idle time using browser APIs
+
+Calculates “focused time” vs “distraction time”
+
+Displays focus ratio on dashboard
+
+7. Mindfulness Hub (Optional)
+
+Library of short AI-suggested activities:
+
+1-minute breathing
+
+Microbreak reminders
+
+Stretch guides
+
+Gemini generates personalized tips
+
+8. Smart Notifications
+
+Local notifications for:
+
+“You’ve been active for 2 hours — time to stretch.”
+
+“Detected high stress: try deep breathing.”
+
+Configurable in Settings
+
+9. Settings & Privacy
+
+Manage permissions
+
+Toggle dark/light theme
+
+Control data sync & Gemini analysis
+
+Option to export/delete all data
+
+10. Extras / Future Enhancements
+
+🧩 PWA (Progressive Web App) support for mobile
+
+🗣️ Voice chat with Gemini using Web Speech API
+
+🎧 Background ambient sounds (AI-curated playlists for relaxation)
+
+💬 AI tone analysis on recorded voice (optional)
+
+🌍 Multi-language support
+
+🧠 Local ML model for offline stress detection
